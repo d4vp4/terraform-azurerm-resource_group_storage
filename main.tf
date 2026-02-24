@@ -2,9 +2,9 @@ provider "azurerm" {
   features {}
 }
 
-module "my_first_module" {
-  source  = "d4vp4/simple-module/azurerm"
-  version = "1.0.1"
+module "resource_group_storage" {
+  source  = "d4vp4/resource_group_storage/azurerm"
+  version = "2.0.0"
 
   resource_group_name  = "rg-my-task-client"
   location             = "East US"
